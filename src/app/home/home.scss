@@ -1,10 +1,29 @@
 
 button {
-    margin-left: 100px;
-    margin-top: 50px;
+    margin: 30px auto;
+    background-color:rgba(24, 134, 24, 0.776)!important;
+    border:3px solid rgb(24, 134, 24);
+}
+
+.container-b{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px auto 0;
+    max-width: 500px;
+
 }
 
 h2 {
-     margin-left: 90px;
-     margin-top: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media (max-width:768px) {
+    .container-b{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+   }
 }

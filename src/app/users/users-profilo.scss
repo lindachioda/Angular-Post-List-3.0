@@ -1,11 +1,17 @@
 
 .container-profiles {
-    margin-left: 80px;
-    margin-top: 50px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .no-accesso {
     margin-left: 80px;
     margin-top: 50px;
     font-size: 1.5em;
+}
+
+h2 {
+    color:#015b01e9;
 }

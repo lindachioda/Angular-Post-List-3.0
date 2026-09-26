@@ -1,11 +1,19 @@
 
 .detail-container {
-    margin-right: 600px;
-    margin-left: 200px;
+    margin: 150px;
+}
+
+h4 {
+    margin-bottom: 30px;
 }
 
 h2 {
-     margin-left: 200px;
-     margin-top: 50px;
-     margin-bottom: 50px;
+    margin-bottom: 20px;
+    color:#015b01e9;
+}
+
+@media (max-width:668px) {
+    .detail-container {
+    margin: 150px 35px;
+   }
 }

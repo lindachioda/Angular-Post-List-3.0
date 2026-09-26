@@ -3,6 +3,16 @@ form {
     display: flex;
     flex-direction: column;
     width: 400px;
-    margin-left: 100px;
-    margin-top: 50px;
+    margin: 50px auto;
+}
+
+button {
+    background-color:rgba(24, 134, 24, 0.776)!important;
+    border:3px solid rgb(24, 134, 24);
+}
+
+@media (max-width:668px) {
+    form {
+        width: 250px;
+    }
 }
