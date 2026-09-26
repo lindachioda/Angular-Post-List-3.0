@@ -1,0 +1,10 @@
+
+<div class="button-container">
+     <button type="button" 
+     class="btn btn-primary" 
+     *ngFor="let user of users" 
+     (click)="clickUser(user)">{{user.name}}</button>
+</div>
+
+
+ <app-users-profilo [user]="userSelezionati"></app-users-profilo>

@@ -1,0 +1,19 @@
+<!--NG CLASS-->
+<div class="card" [ngClass]="{`news` : post.type === `news`, `education` : post.type === `education`, `politic` : post.type === `politic`}">
+  <div class="card-header"><span [appHighlight]="`yellow`">Post</span></div>
+  <div class="card-body">
+    <figure>
+      <blockquote class="blockquote">
+        <p>{{post.body}}</p>
+      </blockquote>
+      <p [ngStyle]="{`font-weight` : 700}">{{post.title | uppercasePipe}}</p> <!--PIPE-->
+    </figure>
+
+    <ng-content></ng-content> <!--lo metto qui perchè è qui che voglio il button!!!!!-->
+
+    <button type="button" class="btn btn-primary" [routerLink]="['/post', post.id]">Dettagli</button>
+
+  </div>
+</div>
+
+

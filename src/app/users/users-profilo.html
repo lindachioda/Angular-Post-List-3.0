@@ -1,0 +1,13 @@
+<div *ngIf="authService.isAuthenticated(); else noAccesso">
+
+     <div class="container-profiles" *ngIf="user">
+         <h2>{{user.name}}</h2>
+         <p>email: {{user.email}}</p>
+         <p>ruolo: {{user.ruolo}}</p>
+     </div>
+
+</div> 
+
+<ng-template #noAccesso>
+    <p class="no-accesso">Non sei autenticato!</p>
+</ng-template>

@@ -1,0 +1,14 @@
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+button {
+    text-align: left;
+}

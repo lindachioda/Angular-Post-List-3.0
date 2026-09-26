@@ -1,0 +1,24 @@
+
+<form #newuser="ngForm" (ngSubmit)="addNewUser(newuser)"> <!--addNewuser è collegato a tutto il form e con ngsubmit parte automaticamente con il bottone-->
+
+<mat-form-field>
+  <mat-label>Nome</mat-label>
+  <input matInput type="text" name="nome" [(ngModel)]="newUser.name" required> <!--ngModel va tra quadre e tonde!!!-->
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Email</mat-label>
+  <input matInput type="text" name="email" [(ngModel)]="newUser.email" required email> 
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Ruolo</mat-label>
+  <mat-select name="ruolo" [(ngModel)]="newUser.ruolo" required>
+    <mat-option value="user">user</mat-option>
+    <mat-option value="admin">admin</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<button matButton="filled" type="submit">Crea</button>
+
+</form>
